@@ -20,7 +20,7 @@ def contatos():
   else:
     return render_template("contato.html")
 
-@app.route("/usuarios")
+@app.route("/usuario")
 def usuarios():
   usuarios = conexao.retorna_usuarios()
-  return render_template("usuarios.html", usuarios = usuarios)
+  return render_template("usuario.html", usuarios = usuarios)

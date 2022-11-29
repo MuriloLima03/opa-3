@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block contents %}
+<div>
+    <p class="p1">Entre em contato</p>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eius
+    aperiam asperiores!
+  </p>
+  <hr />
+</div>
+
+  
+<div>
+    {% for linha in usuarios %}
+        email: {{linha["email_usuario"]}}
+        assunto:{{linha["assunto_usuario"]}}
+        descrição:{{linha["descricao_usuario"]}}
+    {% endfor %}
+</div>
+{% endblock %}
